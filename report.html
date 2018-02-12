@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11838,7 +11838,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11965,7 +11965,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[193]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12104,7 +12104,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[194]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12186,7 +12186,7 @@ Other Feature like Frozen which has comparitively less prediction score(-0.27824
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[195]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14841,7 +14841,7 @@ MzMzMzMzs7b8P6YbhZeIVDkmAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">sb</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">annot</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -15581,7 +15581,7 @@ Yes my attempt to predict the grocery feature was right. By intuition i had thou
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[197]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -21190,7 +21190,7 @@ QmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -21281,7 +21281,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
@@ -21312,7 +21312,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">outliers</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">temp</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
         <span class="n">final_outliers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
-
+<span class="k">print</span> <span class="s2">&quot;Indices for rows that include outliers for multiple features:&quot;</span>
 <span class="k">print</span> <span class="n">final_outliers</span>
 
 <span class="c1"># Remove the outliers, if any were specified</span>
@@ -21948,7 +21948,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[65, 66, 75, 128, 154]
+<pre>Indices for rows that include outliers for multiple features:
+[65, 66, 75, 128, 154]
 (435, 6)
 </pre>
 </div>
@@ -21985,8 +21986,8 @@ There are 5 data points that are considered outlier for more than one feature by
 75(Detergents_Paper, Grocery)
 66(Delicatessen, Fresh)
 65(Frozen, Fresh)
-These data points are outliers as they are below the outlier step we calculated. This outliers are of no use and could introduce unwanted noise and skew the result.
-Beacause of the above mentioned reason the 5 outliers are removed from the data.</p>
+I don't think that all of the 42 outliers should be removed as they are in large number. Removing the 42 data points could cause imporant information loss which is necessary to correctly classify customer behavior. For this reason I only chose to remove the 5 datapoints that are considered outliers in more than one feature to reduce the potential of skewing our results.</p>
+<p>Another reason for adding them to the outliers list because outliers for more than one features will affect PCA which is based on the correlations of the features and is sensitive to outliers.</p>
 
 </div>
 </div>
@@ -22018,7 +22019,7 @@ Beacause of the above mentioned reason the 5 outliers are removed from the data.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[200]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
@@ -22696,7 +22697,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[201]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -22784,7 +22785,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -22818,7 +22819,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -22885,7 +22886,7 @@ RU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[204]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Create a biplot</span>
@@ -22900,11 +22901,11 @@ RU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[204]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11f3bec90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x115cbac50&gt;</pre>
 </div>
 
 </div>
@@ -24646,7 +24647,7 @@ fzmKI26Zh89hAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[208]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data </span>
@@ -24750,7 +24751,7 @@ I would choose two cluster to classify the data.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -25913,7 +25914,7 @@ dIxCCAAAAKBjFEIAAAAAHfN/AXz4ZElpUVw0AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -26026,7 +26027,7 @@ dIxCCAAAAKBjFEIAAAAAHfN/AXz4ZElpUVw0AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -26064,11 +26065,11 @@ Sample point 2 predicted to be in Cluster 1
 <p><strong>Index 100</strong></p>
 <p><strong>Previous assessment:</strong> Supermarket</p>
 <p><strong>Model assessment:</strong> Wholesale Market</p>
-<p><strong>Comments:</strong> This does seem to agree with my original prediction. As spending on milk, grocery and delicatessen products are above the mean so it might be a Supermarket. The Model also somewhat predicted the same.</p>
+<p><strong>Comments:</strong> This does seem to agree with my original prediction. As spending on milk, grocery and delicatessen    products are above the mean so it might be a Supermarket. The Model also somewhat predicted the same.</p>
 <p><strong>Index 200</strong></p>
 <p><strong>Previous assessment:</strong> Wholesale Retailer</p>
 <p><strong>Model assessment:</strong> Wholesale Market</p>
-<p><strong>Comments:</strong> This does seem to agree with the original prediction. I interpreted that as spending on Milk, Grocery, Frozen and Detergent Paper product are way above 75 percentile so it must a Wholesale Retailer. The Model also predicted the same.</p>
+<p><strong>Comments:</strong> This does seem to agree with the original prediction. I interpreted that as spending on Milk, Grocery,  Frozen and Detergent Paper product are way above 75 percentile so it must a Wholesale Retailer. The Model also  predicted the same.</p>
 <p><strong>Index 300</strong></p>
 <p><strong>Previous assessment:</strong> Veg Speciality Restaurant</p>
 <p><strong>Model assessment:</strong> Wholesale Market</p>
@@ -26125,7 +26126,9 @@ The Model worked quite well as it predicted 2 out of 3 samples correctly.</p>
 </ol>
 <p>So the wholesale distributer changing the delivery service from 5 days a week to 3 days a week can affect customers from cluster 0 as they have restuarants which spends more on Fresh Product and needs to be delivered more frequently(Product cannot be stocked).
 Whereas the customers from Cluster 1 will not be affected as thier spending is more on product which do not need to be delivered frequently(Product can be stocked).</p>
-<p>So after finding the above conclusion the wholesale retailer can change the delivery service from 5 days a week to 3 days a week for the customer from cluster 1.</p>
+<p>With this in mind, the Company could run A/B tests and generalize. By picking a subset customers from each Cluster, they can evaluate feedback seperately. It could be established whether changing the delivery service is critical to each segment, and whether customers are happy with the change.</p>
+<p>If a trend is found in a particular cluster, it allows a business to make educated and targeted decisions that would benefit their customers going forward depending on their profile. This is as opposed to which would generalize the entire customer-base.
+So after finding the above conclusion the wholesale retailer can change the delivery service from 5 days a week to 3 days a week for the customer from cluster.</p>
 
 </div>
 </div>
@@ -26172,7 +26175,7 @@ Standard Supervised Learning optimizations could be used to tune the model - boo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[214]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
